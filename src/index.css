@@ -43,15 +43,13 @@
 
 body {
   background-color: #fff0d1;
-  padding-left: 300px;
-  padding-right: 300px;
+  padding-left: 400px;
+  padding-right: 400px;
 }
-/* Smooth scrolling behavior */
 html {
-  scroll-behavior: smooth; /* Enable smooth scrolling for the whole document */
+  scroll-behavior: smooth;
 }
 
-/* Optional: Add transition for navbar links */
 .nav-link {
-  transition: color 100ms ease; /* Add transition for color change */
+  transition: color 100ms ease;
 }
