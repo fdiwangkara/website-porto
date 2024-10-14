@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Regular";
+  src:
+    local("Eudoxus-Regular"),
+    url("./assets/fonts/eudoxus/EudoxusSans-Regular-BF659b6cb1d4714.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Medium";
+  src:
+    local("Eudoxus-Medium"),
+    url("./assets/fonts/eudoxus/EudoxusSans-Medium-BF659b6cb1c14cb.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src:
+    local("Eudoxus-Bold"),
+    url("./assets/fonts/eudoxus/EudoxusSans-Bold-BF659b6cb1408e5.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Extra Bold";
+  src:
+    local("Eudoxus-Extra-Bold"),
+    url("./assets/fonts/eudoxus/EudoxusSans-ExtraBold-BF659b6cb1b96c9.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Javanese Bold";
+  src:
+    local("Javanese-Bold"),
+    url("./assets/fonts/javanese/NotoSansJavanese-Bold.ttf") format("truetype");
+}
+
+body {
+  background-color: #fff0d1;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for the whole document */
+}
+
+/* Optional: Add transition for navbar links */
+.nav-link {
+  transition: color 100ms ease; /* Add transition for color change */
+}
