@@ -22,8 +22,8 @@ const Projects = () => {
   return (
     <section id="projects" className="relative w-full min-h-screen">
       {/* Projects heading */}
-      <div className="w-full flex justify-end pr-[300px] pt-[50px]">
-        <h1 className="font-primaryBold text-[64px] text-black">Projects</h1>
+      <div className="w-full flex justify-end  pt-[50px] justify-end">
+        <h1 className="font-primaryBold text-[64px] text-black ">Projects</h1>
       </div>
 
       {/* Projects grid section */}
