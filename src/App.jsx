@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/navbar";
 import Approach from "./sections/approach";
 import Projects from "./sections/projects";
+import Experiences from "./sections/experiences";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Approach />
       <Projects />
+      <Experiences />
     </div>
   );
 }

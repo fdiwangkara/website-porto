@@ -48,6 +48,13 @@ const Navbar = () => {
       >
         Projects
       </a>
+      <a
+        href="#experiences"
+        className={`text-[32px] ${selected === "experiences" ? "pr-6 text-black" : "pr-0 text-[#9d9d9d]"} text-right hover:text-black transition-all duration-300`}
+        onClick={() => handleClick("experiences")}
+      >
+        Experiences
+      </a>
       {/* Add more links if needed */}
     </div>
   );
