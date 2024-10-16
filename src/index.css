@@ -43,9 +43,24 @@
 
 body {
   background-color: #fff0d1;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
+
+@media (min-width: 768px) {
+  body {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

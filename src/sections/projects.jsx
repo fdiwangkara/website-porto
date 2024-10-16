@@ -27,7 +27,7 @@ const Projects = () => {
       </div>
 
       {/* Projects grid section */}
-      <div className="w-full mt-10 grid grid-cols-2 gap-x-0">
+      <div className="w-full mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 space-y-10 md:space-y-0 justify-center mx-auto">
         {projects.map((project, index) => (
           <Card
             key={index}

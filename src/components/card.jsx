@@ -4,7 +4,7 @@ import Button2 from "./Button2"; // Import the customizable button component
 
 const Card = ({ imageSrc, timeline, title, description }) => {
   return (
-    <div className="w-[420px] h-[600px] shadow-lg flex flex-col rounded-[15px] bg-white">
+    <div className="w-[420px] h-[600px] shadow-lg flex flex-col rounded-[15px] bg-white md:w-[380px] lg:w-[420px]">
       {/* Image */}
       <img
         src={imageSrc}

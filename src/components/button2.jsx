@@ -14,7 +14,7 @@ const Button2 = ({
 }) => {
   return (
     <button
-      className={`w-[180px] h-[60px] rounded-[7px] flex items-center justify-center gap-[10px] font-primaryBold text-[20px] transition-colors duration-300 ${
+      className={`w-[180px] h-[48px] md:w-[160px] rounded-[7px] flex items-center justify-center gap-[10px] font-primaryBold text-[16px] transition-colors duration-300 ${
         hasBorder
           ? `border border-[${borderWidth}] border-[${borderColor}]`
           : "border-none"
