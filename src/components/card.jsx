@@ -1,6 +1,6 @@
 import React from "react";
 import arrowIcon from "../assets/icons/arrow.svg"; // Adjust the path to your project structure
-import Button2 from "./Button2"; // Import the customizable button component
+import Button2 from "../components/button2"; // Import the customizable button component
 
 const Card = ({ imageSrc, timeline, title, description }) => {
   return (
