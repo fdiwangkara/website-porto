@@ -16,7 +16,7 @@ const Approach = () => {
         <p className="font-primaryBold text-[20px] md:text-[24px] pt-3">
           (Welcome)
         </p>
-        <p className="font-primaryRegular text-[16px] md:text-[20px] pt-5 leading-7 md:leading-9">
+        <p className="font-primaryRegular text-[14px] md:text-[20px] pt-5 leading-7 md:leading-9">
           Hello, I'm <span className="text-[#795757]">Filemon Diwangkara</span>,
           a passionate junior programmer with a strong interest in technology.
           My journey in the world of coding has been driven by curiosity and a

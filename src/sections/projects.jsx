@@ -22,21 +22,35 @@ const Projects = () => {
   return (
     <section id="projects" className="relative w-full min-h-screen">
       {/* Projects heading */}
-      <div className="w-full flex justify-end  pt-[50px] justify-end">
-        <h1 className="font-primaryBold text-[64px] text-black ">Projects</h1>
+      <div className="w-full flex justify-center md:justify-end lg:justify-end pt-[50px]">
+        <h1 className="font-primaryBold text-[40px] md:text-[64px] lg:text-[64px] text-black">
+          Projects
+        </h1>
       </div>
 
       {/* Projects grid section */}
-      <div className="w-full mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 space-y-10 md:space-y-0 justify-center mx-auto">
-        {projects.map((project, index) => (
-          <Card
-            key={index}
-            imageSrc={project.imageSrc}
-            timeline={project.timeline}
-            title={project.title}
-            description={project.description}
-          />
-        ))}
+      <div className="w-full mt-10 flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
+          {/* First column (justify-start) */}
+          <div className="flex justify-center md:justify-start lg:justify-start">
+            <Card
+              imageSrc={projects[0].imageSrc}
+              timeline={projects[0].timeline}
+              title={projects[0].title}
+              description={projects[0].description}
+            />
+          </div>
+
+          {/* Second column (justify-end) */}
+          <div className="flex justify-center md:justify-end lg:justify-end">
+            <Card
+              imageSrc={projects[1].imageSrc}
+              timeline={projects[1].timeline}
+              title={projects[1].title}
+              description={projects[1].description}
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

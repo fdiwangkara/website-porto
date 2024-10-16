@@ -40,11 +40,7 @@ const Navbar = () => {
     <div className="fixed right-0 top-0 w-full z-20">
       {/* Hamburger Icon for tablet and mobile */}
       <div className="lg:hidden p-4 flex justify-end">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-          className="shadow-[0_0_30px_30px_#FFF0D1] rounded-full"
-        >
+        <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
           <img src={HamburgerIcon} alt="Hamburger menu" className="w-8 h-8" />
         </button>
       </div>
