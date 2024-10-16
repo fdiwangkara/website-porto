@@ -1,14 +1,15 @@
 import React from "react";
 import Card from "../components/card"; // Ensure correct path for the Card component
+import Klambi from "../images/klambi.png";
 
 const Projects = () => {
   const projects = [
     {
-      imageSrc: "https://via.placeholder.com/445x269", // Placeholder image
-      timeline: "March - May 2024",
-      title: "Project 1",
+      imageSrc: Klambi, // Placeholder image
+      timeline: "March - September 2024",
+      title: "Klambi Clothing App",
       description:
-        "This is the description for project 1. It is an amazing project that demonstrates various skills and techniques.",
+        "in this application I and 2 other friends created a mobile application-based platform to help our friends from the graphic production department of SMK Raden Umar Said to organize the printing of screen printing clothes.",
       readMoreLink: "/projects/1", // Example internal link for reading more about the project
       githubLink: "https://github.com/AanKurniawan11/klambi_ta", // Link to the GitHub repo
     },
