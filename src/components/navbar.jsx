@@ -68,6 +68,13 @@ const Navbar = () => {
         >
           Experiences
         </a>
+        <a
+          href="#contact"
+          className={`text-[32px] ${selected === "contact" ? "pr-6 text-black" : "pr-0 text-[#9d9d9d]"} text-right hover:text-black transition-all duration-300`}
+          onClick={() => handleClick("contact")}
+        >
+          Contacts
+        </a>
       </div>
 
       {/* Hamburger Menu (shown on mobile/tablet when isOpen is true) */}
@@ -112,6 +119,15 @@ const Navbar = () => {
             onClick={() => handleClick("experiences")}
           >
             Experiences
+          </a>
+          <a
+            href="#contact"
+            className={`text-[24px] font-primaryExtraBold ${
+              selected === "contact" ? "text-[#FFF0D1]" : "text-[#9D9D9D]"
+            } transition-all duration-300`}
+            onClick={() => handleClick("contact")}
+          >
+            Contacts
           </a>
         </div>
       </div>
