@@ -14,7 +14,7 @@ const Button2 = ({
 }) => {
   return (
     <button
-      className={`w-[180px] h-[48px] md:w-[160px] rounded-[7px] flex items-center justify-center gap-[10px] font-primaryBold text-[16px] transition-colors duration-300 ${
+      className={`w-[125px] h-[40px] md:w-[140px] md:h-[50px] lg:h-[60px] lg:w-[165px] rounded-[7px] flex items-center justify-center gap-[10px] font-primaryBold text-[12px] md:text-[14px] lg:text-[16px] transition-colors duration-300 ${
         hasBorder
           ? `border border-[${borderWidth}] border-[${borderColor}]`
           : "border-none"
@@ -35,7 +35,7 @@ const Button2 = ({
     >
       <span>{text}</span>
       {/* Display the icon if passed */}
-      {icon && <img src={icon} alt="arrow icon" className="h-[15px]" />}
+      {icon && <img src={icon} alt="arrow icon" className="h-[12px]" />}
     </button>
   );
 };

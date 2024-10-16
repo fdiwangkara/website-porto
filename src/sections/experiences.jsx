@@ -8,12 +8,16 @@ const Experiences = () => {
       className="relative w-full min-h-screen pb-[100px]"
     >
       {/* Projects heading */}
-      <div className="w-full flex justify-start pt-[50px]">
-        <h1 className="font-primaryBold text-[64px] text-black">Experiences</h1>
+      <div className="w-full flex justify-center md:justify-start lg:justify-start pt-[50px]">
+        <h1 className="font-primaryBold text-[40px] md:text-[64px] lg:text-[64px] text-black">
+          Experiences
+        </h1>
       </div>
       {/* History Section */}
       <div className="w-full flex justify-start pt-[50px]">
-        <h3 className="font-primaryBold text-[28px] text-black">History</h3>
+        <h3 className="font-primaryBold text-[20] lg:text-[28px] md:text-[26px] text-black">
+          History
+        </h3>
       </div>
       <div className="pt-5">
         <Text
@@ -33,7 +37,7 @@ const Experiences = () => {
       </div>
       {/* Certificate Section */}
       <div className="w-full flex justify-start pt-[50px]">
-        <h3 className="font-primaryBold text-[28px] text-black">
+        <h3 className="font-primaryBold text-[20] lg:text-[28px] md:text-[26px] text-black">
           Certificates
         </h3>
       </div>
