@@ -2,7 +2,14 @@ import React from "react";
 import arrowIcon from "../assets/icons/arrow.svg"; // Adjust the path to your project structure
 import Button2 from "../components/button2"; // Import the customizable button component
 
-const Card = ({ imageSrc, timeline, title, description }) => {
+const Card = ({
+  imageSrc,
+  timeline,
+  title,
+  description,
+  readMoreLink,
+  githubLink,
+}) => {
   return (
     <div className="w-[320px] h-[450px] shadow-lg flex flex-col rounded-[15px] bg-white md:w-[380px] md:h-[500px] lg:w-[400px] lg:h-[600px]">
       {/* Image */}
@@ -34,6 +41,7 @@ const Card = ({ imageSrc, timeline, title, description }) => {
               textColor="#FFFFFF"
               hasBorder={false}
               icon={arrowIcon} // Passing the arrow icon
+              link={readMoreLink} // Customizable link for "Read More"
             />
 
             {/* Right Button - "Visit Github" with border and hover effect */}
@@ -45,6 +53,7 @@ const Card = ({ imageSrc, timeline, title, description }) => {
               hasBorder={true}
               hoverBgColor="#3B3030" // Change background on hover
               hoverTextColor="#FFFFFF" // Change text color on hover
+              link={githubLink} // Customizable link for "Visit Github"
             />
           </div>
         </div>

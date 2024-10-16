@@ -26,7 +26,7 @@ const Approach = () => {
         </p>
         {/* Button Component */}
         <div className="pt-7">
-          <Button text="Explore" />
+          <Button text="Explore" targetSection="projects" />
         </div>
       </div>
 
