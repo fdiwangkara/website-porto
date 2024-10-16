@@ -11,7 +11,7 @@ const Contact = () => {
       {/* Title */}
       <div className="w-full flex justify-center md:justify-end lg:justify-end pt-[50px]">
         <h1 className="font-primaryBold text-[40px] md:text-[64px] lg:text-[64px] text-black">
-          Contact Me
+          Get in Touch!
         </h1>
       </div>
 
