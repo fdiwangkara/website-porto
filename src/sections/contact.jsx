@@ -7,7 +7,7 @@ import InstagramIcon from "../assets/icons/instagram.svg";
 
 const Contact = () => {
   return (
-    <section id="contact" className="relative w-full min-h-screen">
+    <section id="contact" className="relative w-full min-h-screen pb-[100px]">
       {/* Title */}
       <div className="w-full flex justify-center md:justify-end lg:justify-end pt-[50px]">
         <h1 className="font-primaryBold text-[40px] md:text-[64px] lg:text-[64px] text-black">
