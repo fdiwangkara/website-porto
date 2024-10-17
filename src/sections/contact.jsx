@@ -33,7 +33,7 @@ const Contact = () => {
           <Button3
             text="fdiwangkara2412@gmail.com"
             icon={GmailIcon} // Replace with your custom email icon SVG path
-            link="fdiwangkara2412@gmail.com" // Replace with your email link
+            link="mailto:fdiwangkara2412@gmail.com" // Replace with your email link
           />
 
           {/* Button 2 */}
