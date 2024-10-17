@@ -62,11 +62,11 @@ const Navbar = () => {
           Projects
         </a>
         <a
-          href="#experiences"
-          className={`text-[32px] ${selected === "experiences" ? "pr-6 text-black" : "pr-0 text-[#9d9d9d]"} text-right hover:text-black transition-all duration-300`}
-          onClick={() => handleClick("experiences")}
+          href="#about"
+          className={`text-[32px] ${selected === "about" ? "pr-6 text-black" : "pr-0 text-[#9d9d9d]"} text-right hover:text-black transition-all duration-300`}
+          onClick={() => handleClick("about")}
         >
-          Experiences
+          About
         </a>
         <a
           href="#contact"
@@ -112,13 +112,13 @@ const Navbar = () => {
             Projects
           </a>
           <a
-            href="#experiences"
+            href="#about"
             className={`text-[24px] font-primaryExtraBold ${
-              selected === "experiences" ? "text-[#FFF0D1]" : "text-[#9D9D9D]"
+              selected === "about" ? "text-[#FFF0D1]" : "text-[#9D9D9D]"
             } transition-all duration-300`}
-            onClick={() => handleClick("experiences")}
+            onClick={() => handleClick("about")}
           >
-            Experiences
+            About
           </a>
           <a
             href="#contact"

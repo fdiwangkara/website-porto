@@ -11,12 +11,12 @@ const Card = ({
   githubLink,
 }) => {
   return (
-    <div className="w-[320px] h-[450px] shadow-lg flex flex-col rounded-[15px] bg-white md:w-[380px] md:h-[500px] lg:w-[400px] lg:h-[600px]">
+    <div className="w-[320px] h-[450px] shadow-lg flex flex-col rounded-[15px] bg-white md:w-[380px] md:h-[500px] lg:w-[400px] lg:h-[550px]">
       {/* Image */}
       <img
         src={imageSrc}
         alt="Project"
-        className="w-full h-[269px] object-cover rounded-t-[15px]"
+        className="w-full h-[200px] object-cover rounded-t-[15px]"
       />
 
       {/* Content */}

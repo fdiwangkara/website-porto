@@ -16,9 +16,9 @@ const Projects = () => {
     {
       imageSrc: "https://via.placeholder.com/445x269", // Placeholder image
       timeline: "June - August 2024",
-      title: "Project 2",
+      title: "ELECTOKO Shop App",
       description:
-        "This is the description for project 2. It is an equally amazing project showcasing different methods.",
+        "In this project, my friend and I tried to create an online shop that sells electronic goods. We made this to practice flutter skills and implement APIs into applications.",
       readMoreLink: "/projects/2", // Example internal link for reading more about the project
       githubLink:
         "https://github.com/PenguinBotOnGithub/pas-flutter-ganjil-ecommerce", // Link to the GitHub repo

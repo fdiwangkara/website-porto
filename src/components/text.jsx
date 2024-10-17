@@ -5,9 +5,18 @@ const Text = ({
   primaryBoldText,
   primaryMediumText,
   primaryRegularText,
+  href, // Optional href for link
 }) => {
+  // Wrapper component to handle the link or plain div
+  const Wrapper = href ? "a" : "div";
+
   return (
-    <div className="flex">
+    <Wrapper
+      href={href} // Only applies if href exists
+      target={href ? "_blank" : undefined} // Open in a new tab if it's a link
+      rel={href ? "noopener noreferrer" : undefined}
+      className={`flex ${href ? "cursor-pointer" : ""}`} // Add pointer cursor if it's clickable
+    >
       {/* Left side: SecondaryBold Text */}
       <div className="font-secondaryBold text-[18px] md:text-[24px] lg:text-[24px] text-[#3B3030]">
         {secondaryText}
@@ -27,7 +36,7 @@ const Text = ({
           {primaryRegularText}
         </div>
       </div>
-    </div>
+    </Wrapper>
   );
 };
 

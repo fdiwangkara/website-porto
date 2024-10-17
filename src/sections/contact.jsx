@@ -4,6 +4,7 @@ import Button3 from "../components/button3";
 import GmailIcon from "../assets/icons/gmail.svg";
 import GithubIcon from "../assets/icons/github.svg";
 import InstagramIcon from "../assets/icons/instagram.svg";
+import LinkedINIcon from "../assets/icons/linkedin.svg";
 
 const Contact = () => {
   return (
@@ -47,6 +48,12 @@ const Contact = () => {
             text="Instagram @fdiwangkara"
             icon={InstagramIcon} // Replace with your custom GitHub icon SVG path
             link="https://instagram.com/fdiwangkara" // Replace with your GitHub profile link
+          />
+
+          <Button3
+            text="Linkedin @Filemon Diwangkara"
+            icon={LinkedINIcon} // Replace with your custom GitHub icon SVG path
+            link="https://www.linkedin.com/in/filemon-diwangkara-bani-saptaji-21641b297/" // Replace with your GitHub profile link
           />
         </div>
       </div>

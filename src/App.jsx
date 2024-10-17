@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/navbar";
 import Approach from "./sections/approach";
 import Projects from "./sections/projects";
-import Experiences from "./sections/experiences";
+import Experiences from "./sections/about.jsx";
 import Contact from "./sections/contact";
 import Footer from "./sections/footer.jsx";
 
