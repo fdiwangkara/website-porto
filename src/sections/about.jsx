@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Text from "../components/text";
-import Filter from "../components/Filter"; // Import the Filter component
+import Filter from "../components/filter"; // Import the Filter component
 
 const About = () => {
   const [filterOption, setFilterOption] = useState("educations");
