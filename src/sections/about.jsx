@@ -8,6 +8,7 @@ const About = () => {
   const filterOptions = [
     { label: "Educations", value: "educations" },
     { label: "Certificates", value: "certificates" },
+    { label: "Jobs", value: "jobs" },
   ];
 
   return (
@@ -98,6 +99,24 @@ const About = () => {
               primaryMediumText="Completed in 2020"
               primaryRegularText="Understand and implement basic Python Code. Solid understanding of Python programming fundamentals such as data types and structures, variables, loops, and functions. Create small programs with Python 2."
               href="https://storage.googleapis.com/programminghub/certificate%2F1591878582557.jpg"
+            />
+          </div>
+        </>
+      )}
+      {filterOption === "jobs" && (
+        <>
+          {/* Formal Education Section */}
+          <div className="w-full flex justify-start pt-[50px]">
+            <h3 className="font-primaryBold text-[20px] lg:text-[28px] md:text-[26px] text-black">
+              Jobs
+            </h3>
+          </div>
+          <div className="pt-5">
+            <Text
+              secondaryText="꧑"
+              primaryBoldText="Internships at PT. Acme Indonesia"
+              primaryMediumText="2024 - present"
+              primaryRegularText="Learn the basics of JavaScript, from fundamentals, syntax and ES6 features, to test automation concepts using popular frameworks."
             />
           </div>
         </>
