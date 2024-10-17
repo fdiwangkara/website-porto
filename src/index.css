@@ -56,8 +56,23 @@ body {
 
 @media (min-width: 1024px) {
   body {
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 200px; /* Adjusted for smaller desktop screens */
+    padding-right: 200px;
+  }
+}
+
+/* Larger desktops or smaller full screens */
+@media (min-width: 1280px) {
+  body {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding-left: 300px;
+    padding-right: 300px;
   }
 }
 

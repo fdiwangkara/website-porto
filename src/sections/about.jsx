@@ -114,7 +114,7 @@ const About = () => {
           <div className="pt-5">
             <Text
               secondaryText="꧑"
-              primaryBoldText="Internships at PT. Acme Indonesia"
+              primaryBoldText="Internship at PT. Acme Indonesia"
               primaryMediumText="2024 - present"
               primaryRegularText="Learn the basics of JavaScript, from fundamentals, syntax and ES6 features, to test automation concepts using popular frameworks."
             />

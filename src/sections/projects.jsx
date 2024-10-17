@@ -38,7 +38,7 @@ const Projects = () => {
       <div className="w-full mt-10 flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
           {/* First column (justify-start) */}
-          <div className="flex justify-center md:justify-start lg:justify-start">
+          <div className="flex justify-center">
             <Card
               imageSrc={projects[0].imageSrc}
               timeline={projects[0].timeline}
@@ -50,7 +50,7 @@ const Projects = () => {
           </div>
 
           {/* Second column (justify-end) */}
-          <div className="flex justify-center md:justify-end lg:justify-end">
+          <div className="flex justify-center">
             <Card
               imageSrc={projects[1].imageSrc}
               timeline={projects[1].timeline}
