@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../components/card"; // Ensure correct path for the Card component
 import Klambi from "../images/klambi.png";
+import Electoko from "../images/electoko.png";
 
 const Projects = () => {
   const projects = [
@@ -14,7 +15,7 @@ const Projects = () => {
       githubLink: "https://github.com/AanKurniawan11/klambi_ta", // Link to the GitHub repo
     },
     {
-      imageSrc: "https://via.placeholder.com/445x269", // Placeholder image
+      imageSrc: Electoko, // Placeholder image
       timeline: "June - August 2024",
       title: "ELECTOKO Shop App",
       description:

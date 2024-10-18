@@ -17,7 +17,7 @@ const Contact = () => {
       </div>
 
       {/* Content (Image and Buttons) */}
-      <div className="w-full h-auto md:h-[calc(100vh-200px)] flex flex-col md:flex-row justify-center md:justify-between items-center px-8 pt-[100px] md:pt-0 lg:pt-0">
+      <div className="w-full h-auto md:h-[calc(100vh-200px)] flex flex-col md:flex-row justify-center md:justify-between items-center px-8 pt-[50px] md:pt-0 lg:pt-0">
         {/* Left Section - Image (stays on start in larger screens, stacks on top in smaller screens) */}
         <div className="w-full md:w-1/3 flex justify-center md:justify-start mb-6 md:mb-0">
           <img
