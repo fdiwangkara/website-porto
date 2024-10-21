@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Text from "../components/text";
 import Filter from "../components/filter"; // Import the Filter component
 
@@ -11,17 +13,27 @@ const About = () => {
     { label: "Jobs", value: "jobs" },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // Animation duration
+      once: true, // Ensure animation happens only once
+    });
+  }, []);
+
   return (
     <section id="about" className="relative w-full min-h-screen pb-[100px]">
       {/* About heading */}
-      <div className="w-full flex justify-center md:justify-start lg:justify-start pt-[50px]">
+      <div
+        className="w-full flex justify-center md:justify-start lg:justify-start pt-[50px]"
+        data-aos="fade-up"
+      >
         <h1 className="font-primaryBold text-[40px] md:text-[64px] lg:text-[64px] text-black">
           About
         </h1>
       </div>
 
       {/* Tab Bar Filter Component */}
-      <div className="pt-5">
+      <div className="pt-5" data-aos="fade-up" data-aos-delay="100">
         <Filter
           options={filterOptions}
           selected={filterOption}
@@ -33,12 +45,15 @@ const About = () => {
       {filterOption === "educations" && (
         <>
           {/* Formal Education Section */}
-          <div className="w-full flex justify-start pt-[50px]">
+          <div
+            className="w-full flex justify-start pt-[50px]"
+            data-aos="fade-right"
+          >
             <h3 className="font-primaryBold text-[20px] lg:text-[28px] md:text-[26px] text-black">
               Formal Education
             </h3>
           </div>
-          <div className="pt-5">
+          <div className="pt-5" data-aos="fade-up" data-aos-delay="200">
             <Text
               secondaryText="꧑"
               primaryBoldText="Junior High School at SMP Katolik Cor Jesu Malang"
@@ -46,7 +61,7 @@ const About = () => {
               primaryRegularText="Learn the basics of JavaScript, from fundamentals, syntax and ES6 features, to test automation concepts using popular frameworks."
             />
           </div>
-          <div className="pt-4">
+          <div className="pt-4" data-aos="fade-up" data-aos-delay="300">
             <Text
               secondaryText="꧒"
               primaryBoldText="Vocational High School at SMK Raden Umar Said Kudus"
@@ -60,12 +75,15 @@ const About = () => {
       {filterOption === "certificates" && (
         <>
           {/* Certificates Section */}
-          <div className="w-full flex justify-start pt-[50px]">
+          <div
+            className="w-full flex justify-start pt-[50px]"
+            data-aos="fade-right"
+          >
             <h3 className="font-primaryBold text-[20px] lg:text-[28px] md:text-[26px] text-black">
               Certificates
             </h3>
           </div>
-          <div className="pt-5">
+          <div className="pt-5" data-aos="fade-up" data-aos-delay="200">
             <Text
               secondaryText="꧑"
               primaryBoldText="Belajar Dasar Pemrograman JavaScript"
@@ -74,7 +92,7 @@ const About = () => {
               href="https://www.dicoding.com/certificates/1RXY6EQ1QZVM"
             />
           </div>
-          <div className="pt-4">
+          <div className="pt-4" data-aos="fade-up" data-aos-delay="300">
             <Text
               secondaryText="꧒"
               primaryBoldText="Belajar Back-End Pemula dengan JavaScript"
@@ -83,7 +101,7 @@ const About = () => {
               href="https://www.dicoding.com/certificates/L4PQGE254ZO1"
             />
           </div>
-          <div className="pt-4">
+          <div className="pt-4" data-aos="fade-up" data-aos-delay="400">
             <Text
               secondaryText="꧓"
               primaryBoldText="Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)"
@@ -92,26 +110,21 @@ const About = () => {
               href="https://www.dicoding.com/certificates/N9ZO65EEDXG5"
             />
           </div>
-          <div className="pt-4">
-            <Text
-              secondaryText="꧔"
-              primaryBoldText="Python Programming"
-              primaryMediumText="Completed in 2020"
-              primaryRegularText="Understand and implement basic Python Code. Solid understanding of Python programming fundamentals such as data types and structures, variables, loops, and functions. Create small programs with Python 2."
-              href="https://storage.googleapis.com/programminghub/certificate%2F1591878582557.jpg"
-            />
-          </div>
         </>
       )}
+
       {filterOption === "jobs" && (
         <>
-          {/* Formal Education Section */}
-          <div className="w-full flex justify-start pt-[50px]">
+          {/* Jobs Section */}
+          <div
+            className="w-full flex justify-start pt-[50px]"
+            data-aos="fade-right"
+          >
             <h3 className="font-primaryBold text-[20px] lg:text-[28px] md:text-[26px] text-black">
               Jobs
             </h3>
           </div>
-          <div className="pt-5">
+          <div className="pt-5" data-aos="fade-up" data-aos-delay="200">
             <Text
               secondaryText="꧑"
               primaryBoldText="Internship at PT. Acme Indonesia"
